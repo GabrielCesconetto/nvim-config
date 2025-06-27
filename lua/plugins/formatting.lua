@@ -8,13 +8,13 @@ return {
       formatters = {
         prettier = {
           command = "prettier",
-          args = {
-            "--stdin-filepath",
-            "$FILENAME",
-            "--plugin",
-            "@shopify/prettier-plugin-liquid",
-          },
-          stdin = true,
+          -- args = {
+          --   "--stdin-filepath",
+          --   "$FILENAME",
+          --   "--plugin",
+          --   "@shopify/prettier-plugin-liquid",
+          -- },
+          -- stdin = true,
         },
       },
     },

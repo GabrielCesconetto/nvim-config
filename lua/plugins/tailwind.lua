@@ -3,7 +3,17 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        tailwindcss = {},
+        tailwindcss = {
+          filetypes = {
+            "html",
+            "css",
+            "scss",
+            "liquid",
+            "javascript",
+            "typescript",
+            "typescriptreact",
+          },
+        },
       },
     },
   },

@@ -1,7 +1,5 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
--- vim.api.nvim_create_autocmd("BufWritePre", {
---   pattern = "*.liquid",
---   command = "normal! mzgg=G`z",
--- })
+vim.keymap.set("n", "<Tab>l", "<cmd>BufferLineMoveNext<CR>", { desc = "Move buffer to right" })
+vim.keymap.set("n", "<Tab>h", "<cmd>BufferLineMovePrev<CR>", { desc = "Mover buffer to left" })
